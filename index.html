@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Resident Evil character archive styled as a premium Umbrella Corporation intelligence index.">
+  <title>Umbrella Character Archive</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="home">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Umbrella Character Archive home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>
+          <strong>Umbrella Archive</strong>
+          <small>Resident Evil Character Index</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="characters.html">Characters</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-panel hero-home">
+        <div class="hero-copy">
+          <p class="eyebrow">Umbrella Internal Archive</p>
+          <h1>Every survivor, mastermind, and bioweapon in one clean archive.</h1>
+          <p class="hero-text">
+            A premium Resident Evil character index built around profile browsing rather than clutter. Move from iconic heroes to engineered horrors through a dark, cinematic interface designed to feel like an official Umbrella intelligence system.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="characters.html">Browse Full Character Archive</a>
+            <a class="button button-secondary" href="#featured-characters">Featured Profiles</a>
+          </div>
+
+          <div class="hero-strip">
+            <article>
+              <span class="hero-strip-label">Coverage</span>
+              <strong>RE1 to Requiem</strong>
+            </article>
+            <article>
+              <span class="hero-strip-label">Focus</span>
+              <strong>Character-first profiles</strong>
+            </article>
+            <article>
+              <span class="hero-strip-label">Format</span>
+              <strong>Static GitHub Pages build</strong>
+            </article>
+          </div>
+        </div>
+
+        <aside class="hero-stage">
+          <div class="hero-stage-panel stage-primary">
+            <p class="panel-label">Archive Status</p>
+            <div class="hero-stats">
+              <article>
+                <strong data-stat="total">0</strong>
+                <span>Indexed Subjects</span>
+              </article>
+              <article>
+                <strong data-stat="heroes">0</strong>
+                <span>Heroic Profiles</span>
+              </article>
+              <article>
+                <strong data-stat="threats">0</strong>
+                <span>Threat Entities</span>
+              </article>
+            </div>
+          </div>
+          <div class="hero-stage-panel stage-secondary" data-home-spotlight>
+            <p class="loading-state">Loading archive spotlight...</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section-block intro-band">
+        <div>
+          <p class="eyebrow">Archive Overview</p>
+          <h2>A restrained Umbrella aesthetic centered on portraits, readable summaries, and direct navigation into each profile.</h2>
+        </div>
+        <div class="intro-copy">
+          <p>
+            The design avoids fake dossier overload and instead treats each subject like a premium archive entry: consistent portrait handling, balanced card grids, strong spacing, and elegant red-lit surfaces.
+          </p>
+          <a class="text-link" href="characters.html">Enter the full archive</a>
+        </div>
+      </section>
+
+      <section class="section-block section-featured" id="featured-characters">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Featured Profiles</p>
+            <h2>Major heroes, infamous villains, and bioweapons that define the series.</h2>
+          </div>
+          <a class="text-link" href="characters.html">View all characters</a>
+        </div>
+        <div class="character-grid featured-grid" data-featured-grid>
+          <p class="loading-state">Loading featured characters...</p>
+        </div>
+      </section>
+
+      <section class="section-block highlights-grid">
+        <article class="info-panel reveal-card">
+          <p class="eyebrow">Premium Layout</p>
+          <h3>Sharper hierarchy, stronger atmosphere, cleaner reading flow.</h3>
+          <p>Every surface uses layered panels, subtle inner borders, controlled glows, and cinematic spacing to feel more like a modern archive than a generic fan page.</p>
+        </article>
+        <article class="info-panel reveal-card">
+          <p class="eyebrow">Consistent Portraits</p>
+          <h3>Uniform image treatment across archive cards and profile pages.</h3>
+          <p>Portrait windows share the same ratio and object-fit behavior, so the grid stays aligned while every character still feels distinct.</p>
+        </article>
+        <article class="info-panel reveal-card">
+          <p class="eyebrow">Immediate Use</p>
+          <h3>Everything loads from one data source and works on GitHub Pages.</h3>
+          <p>The homepage, archive filters, and detail pages are all fed by the same JSON archive to keep the site maintainable and expandable.</p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/script.js" defer></script>
+</body>
+</html>

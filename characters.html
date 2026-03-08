@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse the full Resident Evil character archive.">
+  <title>Character Archive | Umbrella Archive</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="archive">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Umbrella Character Archive home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>
+          <strong>Umbrella Archive</strong>
+          <small>Resident Evil Character Index</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html">Home</a>
+        <a href="characters.html" aria-current="page">Characters</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-panel compact-hero archive-hero">
+        <div class="hero-copy compact-copy">
+          <p class="eyebrow">Character Archive</p>
+          <h1>Search the roster without losing the atmosphere.</h1>
+          <p class="hero-text">
+            Filter the archive by game, category, and alignment, then open any subject in a dedicated profile view.
+          </p>
+        </div>
+        <div class="archive-hero-notes">
+          <article>
+            <span class="hero-strip-label">Grid</span>
+            <strong>Consistent portrait cards</strong>
+          </article>
+          <article>
+            <span class="hero-strip-label">Filters</span>
+            <strong>Fast search and narrowing</strong>
+          </article>
+          <article>
+            <span class="hero-strip-label">Profiles</span>
+            <strong>Direct character detail pages</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block archive-shell">
+        <div class="filter-bar">
+          <label class="field-group field-search">
+            <span>Search</span>
+            <input id="search-input" type="search" placeholder="Search by name, summary, game, or affiliation">
+          </label>
+
+          <label class="field-group">
+            <span>Game</span>
+            <select id="game-filter">
+              <option value="all">All games</option>
+            </select>
+          </label>
+
+          <label class="field-group">
+            <span>Category</span>
+            <select id="category-filter">
+              <option value="all">All categories</option>
+            </select>
+          </label>
+
+          <label class="field-group">
+            <span>Alignment</span>
+            <select id="alignment-filter">
+              <option value="all">All alignments</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="archive-meta">
+          <p id="results-count">Loading archive...</p>
+          <p class="archive-hint">Portraits stay locked to a shared frame for a cleaner, premium grid.</p>
+        </div>
+
+        <div class="character-grid archive-grid" id="archive-grid">
+          <p class="loading-state">Loading character records...</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/script.js" defer></script>
+</body>
+</html>
